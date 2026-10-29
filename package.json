@@ -1,0 +1,29 @@
+{
+  "name": "staysphere-monorepo",
+  "version": "1.0.0",
+  "description": "StaySphere — Modern Hotel Booking & Management Platform (MERN)",
+  "private": true,
+  "scripts": {
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "npm --prefix server start",
+    "seed": "npm --prefix server run seed",
+    "test:server": "npm --prefix server test",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  },
+  "keywords": [
+    "hotel-booking",
+    "mern",
+    "hospitality",
+    "india",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "StaySphere Team",
+  "license": "MIT"
+}
