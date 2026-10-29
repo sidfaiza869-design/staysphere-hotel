@@ -144,15 +144,10 @@ StaySphere/
      MONGODB_URI=
      JWT_SECRET=staysphere_super_secret_jwt_key_for_development_only_2026
      JWT_EXPIRES_IN=7d
-     CLIENT_URL=http://localhost:5173
      TAX_RATE_PERCENT=12
      PAYMENT_PROVIDER=demo
      ```
-     > **Note:** If `MONGODB_URI` is left blank or cannot be reached locally, StaySphere automatically falls back to an embedded in-memory MongoDB instance for zero-configuration local execution!
-   - Client: copy `client/.env.example` to `client/.env`
-     ```bash
-     VITE_API_BASE_URL=http://localhost:5000/api
-     ```
+
 
 4. **Seed Demonstration Hotel Data:**
    Populate 20 hotels across 18 Indian cities, room types, and demo accounts:
@@ -164,40 +159,9 @@ StaySphere/
 
 ---
 
-## 🏃 Running the Application
 
-### Option A: Run Both Client & Server Concurrently (Recommended)
-```bash
-npm run dev
-```
 
-### Option B: Run Services Separately
-- **Backend API Server**:
-  ```bash
-  npm run server
-  # Server will run at http://localhost:5000
-  ```
-- **Frontend Client**:
-  ```bash
-  npm run client
-  # Client will run at http://localhost:5173
-  ```
 
-Open your browser at `http://localhost:5173`.
-
----
-
-## 👥 Demo Accounts
-
-The seed script creates three ready-to-test accounts (with 1-click test buttons on the login page):
-
-| Role | Email | Password | Access Level |
-|---|---|---|---|
-| **Guest** | `guest@staysphere.com` | `Guest@123` | Search, book stays, manage reservations, write verified reviews |
-| **Hotel Manager** | `manager@staysphere.com` | `Manager@123` | Manager portal, view assigned properties, manage rooms, check-in/out |
-| **Administrator** | `admin@staysphere.com` | `Admin@123` | Full admin portal, revenue charts, user governance, hotel approvals |
-
----
 
 ## 🧪 Running Automated Tests
 
